@@ -1,6 +1,9 @@
 .ult-tag {
   color: white;
   text-align: center;
-  font-size: 21px;
-  font-family: "Space Grotesk";
+  font-size: 16px;
+  font-family: "Animales Fantastic";
+
+  font-weight: 600;
+  mix-blend-mode: normal;
 }
