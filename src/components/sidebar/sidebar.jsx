@@ -17,13 +17,19 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
   };
   const [projectDropDown, setProjectDropDown] = useState(false);
   const [aboutDropDown, setAboutDropDown] = useState(false);
+  let toggleHere=()=>{
+    let closeIco = document.getElementById("close-ico")
+    let openIco = document.getElementById("open-ico")
+    closeIco.classList.add('no-open') 
+    openIco.classList.add("imp-mbl") 
+  }
   return (
     <div
       className={[styles.sidebar, showSidebar ? styles.showSidebar : ""].join(
         " "
       )}
     >
-      <div>
+      <div> 
         <NavLink to="/" className={styles.logoContainer}>
           <img
             src={images["logo.webp"]}
@@ -45,6 +51,7 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
               setProjectDropDown(false);
               setAboutDropDown(false);
               setShowSidebar();
+              toggleHere() 
             }}
           >
             <img src={imageIconsPath("Swordsofblood")} alt="Swordsofblood" />
@@ -70,7 +77,7 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
               />
             </p>
 
-            <div
+            <div 
               className={`${styles.dropdownItems} ${
                 aboutDropDown && styles.aboutDropDowns
               }`} 
@@ -80,7 +87,10 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
                 target="_blank"
                 rel="noreferrer"
                 className={[styles.navItem, styles.dropdownItem].join(" ")}
-                onClick={setShowSidebar}
+                onClick={()=>{
+                  setShowSidebar();
+                  toggleHere()
+                }}
               >
                 <img src={imageIconsPath("Whitepaper")} alt="Whitepaper" />
                 {strings.wpTtl}
@@ -93,8 +103,10 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
                     styles.dropdownItem,
                     isActive ? styles.active : "",
                   ].join(" ")
-                }
-                onClick={setShowSidebar}
+                } onClick={() => {
+                  setShowSidebar();
+                  toggleHere()
+                }}
               >
                 <img
                   src={imageIconsPath("Token Allocation")}
@@ -107,7 +119,10 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
                 target="_blank"
                 rel="noreferrer"
                 className={[styles.navItem, styles.dropdownItem].join(" ")}
-                onClick={setShowSidebar}
+                onClick={() => {
+                  setShowSidebar();
+                  toggleHere()
+                }}
                 style={{ height: "max-content !important" }}
               >
                 <img src={imageIconsPath("Pitchdeck")} alt="Pitchdeck" />
@@ -121,8 +136,10 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
                     styles.dropdownItem,
                     isActive ? styles.active : "",
                   ].join(" ")
-                }
-                onClick={setShowSidebar}
+                } onClick={() => {
+                  setShowSidebar();
+                  toggleHere()
+                }}
               >
                 <img
                   src={imageIconsPath("Token Allocation")}
@@ -137,6 +154,7 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
               setProjectDropDown(false);
               setAboutDropDown(false);
               setShowSidebar();
+              toggleHere()
             }}
             to="/presale/"
             className={({ isActive }) =>
@@ -182,6 +200,7 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
                 onClick={() => {
                   setProjectDropDown(true);
                   setShowSidebar();
+                  toggleHere()
                 }}
                 to="/roadmap"
                 className={({ isActive }) =>
@@ -200,7 +219,10 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
                 rel="noreferrer"
                 target="_blank"
                 className={[styles.navItem, styles.dropdownItem].join(" ")}
-                onClick={setShowSidebar}
+                onClick={() => {
+                  setShowSidebar();
+                  toggleHere()
+                }}
               >
                 <img src={imageIconsPath("Audit")} alt="Audit" />
                 {strings.auditTtl}

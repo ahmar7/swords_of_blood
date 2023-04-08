@@ -18,8 +18,8 @@ export default function MainContainer({ children }) {
 
 	return (
 		<div className={styles.container}>
-			<Header toggleSidebar={toggleSidebar}/>
-			<Sidebar setShowSidebar={closeSideBare} showSidebar={showSidebar}/>
+			<Header toggleSidebar={toggleSidebar} />
+			<Sidebar setShowSidebar={closeSideBare} showSidebar={showSidebar} />
 			<div className={styles.rightside}>
 				{children}
 				<Footer/>

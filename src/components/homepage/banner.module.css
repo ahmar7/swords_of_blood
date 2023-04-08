@@ -15,6 +15,7 @@
 .banner .image {
   height: 140%;
   /* object-fit: cover; */
+  transform: scaleX(1.1);
   object-position: center;
   object-fit: cover;
 }
@@ -241,7 +242,7 @@
 
 @media only screen and (min-width: 991px) {
   .banner .connectWalletContainer {
-    min-width: 555px;
+    min-width: 435px;
   }
   .heroSection {
     border-radius: 14px 0 0 14px !important;

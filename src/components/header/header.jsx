@@ -22,6 +22,7 @@ export default function Header({ toggleSidebar }) {
     if (sidebarOpened) setSidebarOpened(false);
     else setSidebarOpened(true);
     toggleSidebar();
+    console.log("check");
   };
 
   useEffect(() => {
@@ -64,14 +65,23 @@ export default function Header({ toggleSidebar }) {
         </Link>
       </div>
       {sidebarOpened ? (
-        <button onClick={toggleButton} className={styles.close}>
-          <FontAwesomeIcon icon={faXmark} />
-        </button>
+      <>
+          <button onClick={toggleButton} id="close-ico" className={styles.close}>
+            <FontAwesomeIcon icon={faXmark} />
+          </button>
+          <button onClick={toggleButton} id="open-ico" style={{display:"none"}} className={styles.hamburger}>
+            <FontAwesomeIcon icon={faBars} />
+          </button></>
     
       ) : (
-        <button onClick={toggleButton} className={styles.hamburger}>
-          <FontAwesomeIcon icon={faBars} />
-        </button>
+        
+       <>
+            <button onClick={toggleButton} id="open-ico" className={styles.hamburger}>
+              <FontAwesomeIcon icon={faBars} />
+            </button>
+            <button onClick={toggleButton} id="close-ico" style={{ display: "none" }} className={styles.close}>
+              <FontAwesomeIcon icon={faXmark} />
+            </button></>
      
       )}
       <img
