@@ -1,0 +1,12 @@
+.abs-img {
+  position: absolute;
+  top: 20px;
+}
+@media (max-width: 1250px) {
+  .abs-img {
+    position: static;
+  }
+  .no-dsi {
+    display: none !important;
+  }
+}
