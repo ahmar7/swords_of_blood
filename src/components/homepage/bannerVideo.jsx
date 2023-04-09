@@ -6,7 +6,7 @@ let BannerVideo=()=> {
   
   return (
    <>
-      <video 
+      {/* <video 
         style={{ pointerEvents: "none" }}
          
         className={["image desk-only", styles.image].join(" ")}
@@ -16,7 +16,7 @@ let BannerVideo=()=> {
       >
         <source className="desk-only" src="/assets/video/hero3.webm" type="video/webm" />
         <source className="desk-only" src="/assets/video/hero3.mp4" type="video/mp4" />
-      </video>
+      </video> */}
       <img className="mbl-only" src={img} alt="" />
        
    </>
