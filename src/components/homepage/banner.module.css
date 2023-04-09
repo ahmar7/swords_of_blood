@@ -358,6 +358,8 @@
 @media (max-width:768px) {
    .banner .image {
    display: none !important;
+   position: absolute;
+   z-index: -99999999;
    opacity: 0 !important;
   }
   
