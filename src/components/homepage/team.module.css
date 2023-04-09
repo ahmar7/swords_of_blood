@@ -1,18 +1,24 @@
 .teamSection {
   padding: 40px 0;
-  width: max-content;
+  width: 100%;
   margin: 0 auto;
 }
+ 
 
 .heading {
   margin-bottom: 60px;
 }
 
 .teamMembers {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-content: space-around;
-  gap: 20px;
+  gap: 20px; */
+ 
+    justify-content: space-between;
+    /* gap: 20px; */
+    align-items: center;
+    display: flex;
 }
 
 .teamMember {

@@ -48,7 +48,7 @@ export default function ModalBuy({
 
   const updatePayAmount = (val) => {
     setPayAmount(
-      parseFloat(val * presaleData.currentPrice).toLocaleString("en-US")
+      parseFloat(val * 0.07).toLocaleString("en-US")
     );
   };
 

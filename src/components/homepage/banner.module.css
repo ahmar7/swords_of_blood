@@ -16,6 +16,7 @@
   height: 140%;
   /* object-fit: cover; */
   transform: scaleX(1.1);
+  margin-left: -15px;
   object-position: center;
   object-fit: cover;
 }

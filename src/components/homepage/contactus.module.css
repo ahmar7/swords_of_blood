@@ -8,7 +8,7 @@
   position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
 }
 
 .contactus {

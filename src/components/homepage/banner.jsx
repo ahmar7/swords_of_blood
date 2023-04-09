@@ -506,11 +506,11 @@ export default function Banner() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [refresh]);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setRefresh((prev) => prev + 1);
-    }, 1000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setRefresh((prev) => prev + 1);
+  //   }, 1000);
+  // }, []);
 
   return (
     <>
@@ -567,7 +567,7 @@ export default function Banner() {
                   {strings.buyBefore
                     .replace("{STAGE}", presaleData.currentStage + 2)
                     .replace("{PRICE}", presaleData.nextPrice)}
-                  <span className={styles.gold_bg}>$0.080</span>
+                  <span className={styles.gold_bg}>$0.070</span>
                 </p>
                 {/* ) : (
                   <p className={styles.info}>{strings.buyBeforeTheEnd}</p>

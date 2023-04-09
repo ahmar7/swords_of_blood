@@ -30,7 +30,11 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
       )}
     >
       <div> 
-        <NavLink to="/" className={styles.logoContainer}>
+        <NavLink to="/" onClick={() => {
+          setProjectDropDown(false);
+          setAboutDropDown(false);
+         
+        }} className={styles.logoContainer}>
           <img
             src={images["logo.webp"]}
             alt={strings.logoTitle}
