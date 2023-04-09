@@ -7,15 +7,17 @@ let BannerVideo=()=> {
   
   return (
    <>
-      <video  
+      <video 
+        style={{ pointerEvents: "none" }}
          
-        className="desk-only"
+        className={["image desk-only", styles.image].join(" ")}
         autoPlay
         loop
+        src="/assets/video/hero3.mp4"
         playsinline
       >
-        <source className="desk-only" src="/assets/video/hero3.webm" type="video/webm" />
-        <source className="desk-only" src="/assets/video/hero3.mp4" type="video/mp4" />
+        {/* <source className="desk-only" src="/assets/video/hero3.webm" type="video/webm" />
+        <source className="desk-only" src="/assets/video/hero3.mp4" type="video/mp4" /> */}
       </video>
       <img className="mbl-only" src={img} alt="" />
        
