@@ -2,14 +2,14 @@ import styles from "./banner.module.css";
 import './custom.css'
 import img from '../../images/home/hero3.webp'
 let BannerVideo=()=> {
- 
+  
+
   
   return (
    <>
-      <video 
-        style={{ pointerEvents: "none" }}
+      <video  
          
-        className={["image desk-only", styles.image].join(" ")}
+        className="desk-only"
         autoPlay
         loop
         playsinline
