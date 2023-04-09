@@ -9,7 +9,7 @@ let BannerVideo=()=> {
       <video
         id="autopl"
         style={{ pointerEvents: "none" }}
-        muted={true}
+         
         className={["image desk-only", styles.image].join(" ")}
         autoPlay
         loop
