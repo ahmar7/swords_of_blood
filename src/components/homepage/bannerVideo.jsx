@@ -14,7 +14,7 @@ let BannerVideo=()=> {
         autoPlay
         loop
         src="/assets/video/hero3.mp4"
-        playsinline
+        
       >
         {/* <source className="desk-only" src="/assets/video/hero3.webm" type="video/webm" />
         <source className="desk-only" src="/assets/video/hero3.mp4" type="video/mp4" /> */}
