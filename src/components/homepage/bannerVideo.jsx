@@ -6,7 +6,7 @@ let BannerVideo=()=> {
   
   return (
    <>
-      {/* <video
+      <video
         id="autopl"
         style={{ pointerEvents: "none" }}
         muted={true}
@@ -17,7 +17,7 @@ let BannerVideo=()=> {
       >
         <source src="/assets/video/hero3.webm" type="video/webm" />
         <source src="/assets/video/hero3.mp4" type="video/mp4" />
-      </video> */}
+      </video>
       <img className="mbl-only" src={img} alt="" />
        
    </>

@@ -28,6 +28,7 @@
 @media (max-width:768px) {
   .desk-only{
     display: none !important;
+    opacity: 0 !important;
   }
   .mbl-only{
     display: block !important;
