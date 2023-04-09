@@ -14,7 +14,18 @@
   width: 100%;
 }.team_teamSection__0W7nM{
   width: 100%;
-}@media (max-width:768px) {
+}
+
+.data-flex{
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #c9ab84;
+    position: absolute;
+}
+@media (max-width:768px) {
   .desk-only{
     display: none !important;
   }

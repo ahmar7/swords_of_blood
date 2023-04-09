@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import Localization from "../../context/localization";
-
+import NewImg from'../../images/home/team/James-Seaman.webp'
 import { importAllImages } from "../../functions/common";
 import styles from "./team.module.css";
-
+import './custom.css'
 export default function Team() {
   const { strings } = useContext(Localization);
   const images = importAllImages();
@@ -51,12 +51,15 @@ export default function Team() {
             </div>
           );
         })}
-        <a href="/team/" className={styles.goToTeam}>
-          <img src={images["svg/right.svg"]} alt="right" />
-          <small>
-            Meet the <br /> team behind
-          </small>{" "}
-          <span>Swords of Blood</span>
+        <a href="/team/" className={styles.goToTeam} style={{position:"relative"}}>
+         <div className="data-flex">
+            <img src={images["svg/right.svg"]} alt="right" />
+            <small>
+              Meet the <br /> team behind
+            </small>{" "}
+            <span>Swords of Blood</span>
+         </div>
+          <img src={NewImg} alt="" style={{opacity:0,width:"100%",marginBottom:0}} />
         </a>
       </div>
     </div>

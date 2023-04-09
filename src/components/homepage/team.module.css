@@ -16,24 +16,24 @@
   gap: 20px; */
  
     justify-content: space-between;
-    /* gap: 20px; */
+    gap: 30px;
     align-items: center;
     display: flex;
 }
 
 .teamMember {
   height: 100%;
+  width: 20%;
 }
 
 .teamImage {
-  width: 264px;
+  width:100%;
   border-radius: 24px;
   border: 1px solid var(--primary-color);
 }
 
 .goToTeam {
-  width: 264px;
-  height: 264px;
+  width: 20%; 
   border-radius: 24px;
   border: 1px solid var(--primary-color);
 
@@ -46,7 +46,7 @@
   color: #c9ab84;
 }
 
-.goToTeam img {
+.goToTeam img { 
   margin-bottom: 13px;
 }
 
@@ -91,59 +91,48 @@
   width: 30px;
 }
 @media only screen and (max-width: 1440px) {
-  .teamMembers {
-    gap: 20px;
-  }
+ 
 }
 
 @media only screen and (max-width: 1750px) {
-  .teamMembers {
-    grid-template-columns: repeat(4, 1fr);
-  }
+  
 }
 
 @media only screen and (max-width: 1450px) {
-  .teamMembers {
-    grid-template-columns: repeat(3, 1fr);
-  }
+ 
 }
 
 @media only screen and (max-width: 1200px) {
 
-  .teamMembers {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .teamImage {
-    width: 230px;
-  }
-  .goToTeam {
-    width: 230px;
-    height: 230px;
-  }
+   
+ 
 }
 
 @media only screen and (max-width: 1050px) {
-  .teamImage {
-    width: 200px;
+   .teamMembers {
+  flex-wrap: wrap;
   }
-  .goToTeam {
-    width: 200px;
-    height: 200px;
-  }
+   
+  
 }
 
 @media only screen and (max-width: 900px) {
-  .teamMembers {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
+ 
+ .teamMember,.goToTeam {
+ 
+  width: 25%;
+}
+.teamMembers
+{gap: 30px;justify-content: center;}
+
+
 }
 
-@media only screen and (max-width: 500px) {
-  .teamMembers {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
-  }
+@media only screen and (max-width: 600px) {
+   .teamMember,.goToTeam {
+ 
+  width: 44%;
+}
 }
 @media (max-width: 768px) {
   .teamSection .infoAndSocial {
