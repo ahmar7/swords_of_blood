@@ -360,6 +360,7 @@
    display: none !important;
    position: absolute;
    z-index: -99999999;
+   width: 0 !important;
    opacity: 0 !important;
   }
   
