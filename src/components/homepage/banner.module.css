@@ -425,5 +425,9 @@
 @media (max-width: 990px) {
   .heroSection {
     margin-right: 0px !important;
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
 }
+

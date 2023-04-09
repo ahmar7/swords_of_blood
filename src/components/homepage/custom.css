@@ -7,9 +7,18 @@
   font-weight: 600;
   mix-blend-mode: normal;
 }
-
+.mbl-only{
+  display: none !important;
+}
 .contactus_contactusWrapper__FfJun{
   width: 100%;
 }.team_teamSection__0W7nM{
   width: 100%;
+}@media (max-width:768px) {
+  .desk-only{
+    display: none !important;
+  }
+  .mbl-only{
+    display: block !important;
+  }
 }
