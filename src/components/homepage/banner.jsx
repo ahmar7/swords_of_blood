@@ -567,7 +567,7 @@ export default function Banner() {
                   {strings.buyBefore
                     .replace("{STAGE}", presaleData.currentStage + 2)
                     .replace("{PRICE}", presaleData.nextPrice)}
-                  <span className={styles.gold_bg}>$0.070</span>
+                  <span className={styles.gold_bg}>$0.080</span>
                 </p>
                 {/* ) : (
                   <p className={styles.info}>{strings.buyBeforeTheEnd}</p>
