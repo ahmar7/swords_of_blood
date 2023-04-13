@@ -355,21 +355,23 @@
     padding-bottom: 50px;
   }
 }
-@media (max-width:768px) {
-   .banner .image {
-   /* display: none !important;
+@media (max-width: 768px) {
+  .banner .image {
+    /* display: none !important;
    position: absolute;
    z-index: -99999999;
    width: 0 !important;
    opacity: 0 !important; */
-   position: absolute;
-   top: -55000%;
+    position: absolute;
+    top: -55000%;
   }
-  
 }
 @media only screen and (max-width: 400px) {
   .banner .connectWallet {
     padding: 16px 10px;
+  }
+  .banner .info {
+    font-size: 13px;
   }
 }
 
@@ -441,4 +443,3 @@
     text-align: center;
   }
 }
-

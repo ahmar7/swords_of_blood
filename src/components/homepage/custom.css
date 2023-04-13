@@ -88,11 +88,18 @@ color: #FFFFFF;
     position: absolute;
 }
 @media (max-width:768px) {
+  .indiv-video{
+    gap: 10px;
+  }
   /* .desk-only{
     display: none !important;
     opacity: 0 !important;
   } */
   .mbl-only{
     display: block !important;
+  }
+  .separate-bx{
+    width: 100% !important;
+    height: 170px !important;
   }
 }

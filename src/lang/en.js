@@ -79,7 +79,7 @@ export default function Strings() {
     wygTitle6: "web3 MVP launching in May 2023",
     wygTitle7: "Project is run by game development veterans",
     wygTitle8: "Cross-play enabled for mobile and PC",
-    wygTitle9: "PvP Map",
+    wygTitle9: "Highly immersive 16-player Multiplayer PvP",
     wygTitle10: "Enjoy 60fps in 4k gaming experience (PC)",
     modeT1: "Boss Fortress",
     modeT2: "PvP",

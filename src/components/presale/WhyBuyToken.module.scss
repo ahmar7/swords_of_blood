@@ -38,3 +38,14 @@
     }
   }
 }
+@media (max-width:768px) {
+    [aria-label="item-container"] {
+ 
+    gap: 7px;
+    margin-bottom: 15px;
+  }
+
+.index {
+  column-gap: 18px;
+}
+}

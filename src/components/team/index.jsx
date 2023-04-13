@@ -77,7 +77,7 @@ export default function Index() {
     {
       name: strings.teamName4,
       title: strings.teamTtl4,
-      img: images["home/team/Vee-Lozano.webp"],
+      img: images["home/team/Yupeng-Qin.webp"],
     },
     {
       name: strings.teamName8,

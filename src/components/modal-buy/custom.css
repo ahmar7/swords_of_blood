@@ -42,24 +42,22 @@ opacity: 0.83;}
     flex-direction: column;
     gap: 15px;
      padding: 30px 20px 0 20px}
-.float-num{
+.float-num {
     position: absolute;
     left: 0;
     right: 0;
     margin: 0 auto;
-
-background: #C9AB84;
-border-radius: 14px;
-
-font-family: 'Space Grotesk';
-font-style: normal;
-font-weight: 700;
-font-size: 8px; 
-width: 52px;
-bottom: -14px;
-text-align: center;
-
-color: #07090A;
+    background: #C9AB84;
+    border-radius: 14px;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    width: max-content;
+    bottom: -14px;
+    padding: 0 10px;
+    text-align: center;
+    color: #07090A;
 }
 @media (max-width:900px) {
  .md-top-sp{

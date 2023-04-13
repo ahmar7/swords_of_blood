@@ -30,7 +30,7 @@ export default function Team() {
     {
       name: strings.teamName4,
       title: strings.teamTtl4,
-      img: images["home/team/Yupeng-Qin.webp"],
+      img: images["home/team/Vee-Lozano.webp"],
     },
   ];
 
@@ -51,7 +51,7 @@ export default function Team() {
             </div>
           );
         })}
-        <a href="/team/" className={styles.goToTeam} style={{position:"relative"}}>
+        <a href="/team/" className={styles.goToTeam+" "+"separate-bx"} style={{position:"relative"}}>
          <div className="data-flex">
             <img src={images["svg/right.svg"]} alt="right" />
             <small>
