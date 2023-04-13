@@ -4,6 +4,44 @@
 .rel-pos{
     position: relative;
 }
+.bg-cont{
+  background-image: url(../../images/home/banner/Bg.png);
+ padding: 20px 20px;
+ border-bottom-left-radius: 14px;
+ border-bottom-right-radius: 14px;
+ border-top: 1px solid #C9AB84;
+ border-top-right-radius: 14px;
+ border-top-left-radius: 14px;
+}
+.gift-txt{
+  font-family: 'Space Grotesk';
+font-style: normal;
+font-weight: 700;
+font-size: 14px; 
+
+color: #FFFFFF;
+
+}
+.sp-bonus{font-family: 'Space Grotesk';
+font-style: normal;
+font-weight: 400;
+font-size: 8px; 
+text-align: left;
+margin-bottom: 25px;
+
+color: #FFFFFF;
+
+mix-blend-mode: normal;
+opacity: 0.83;}
+.flex-ico{
+  display: flex;
+  align-items:center;
+}
+.flexz{
+  display: flex;
+    flex-direction: column;
+    gap: 15px;
+     padding: 30px 20px 0 20px}
 .float-num{
     position: absolute;
     left: 0;

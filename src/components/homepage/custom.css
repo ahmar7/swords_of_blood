@@ -29,8 +29,17 @@
   width: 30%;
 }
 .vid-title{
+    font-family: "Animales Fantastic";
   color: white;
-  text-align: center;
+  text-align: center; 
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+text-align: center;
+letter-spacing: 1px;
+
+color: #FFFFFF;
+
 }
 @media (max-width:1200px) {
   .game-flex{

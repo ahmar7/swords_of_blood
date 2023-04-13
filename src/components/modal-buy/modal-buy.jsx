@@ -7,6 +7,7 @@ import Localization from "../../context/localization";
 import { config } from "../../functions/config";
 import mcwStyles from "../modal-connect-wallet/modal-connect-wallet.module.css";
 import styles from "./modal-buy.module.css";
+import GiftIco from '../../images/home/banner/SOB.png'
 import './custom.css'
 function format(num) {
   const result = num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -51,8 +52,8 @@ export default function ModalBuy({
     setPayAmount(
       parseFloat(val * 0.07).toLocaleString("en-US")
     );
-   
-    
+
+
   };
 
   const updateTokenAmount = (val) => {
@@ -131,32 +132,34 @@ export default function ModalBuy({
           <div className={mcwStyles.modalCont}>
             <div className={[mcwStyles.modal, styles.modal].join(" ")}>
               <div className={styles.modalContent}>
-                <p className={mcwStyles.modalClose}>
-                  <FontAwesomeIcon
-                    onClick={() => setShowModal(false)}
-                    icon={faXmark}
-                  />
-                </p>
-                <p className={styles.modalTitle}>
-                  {strings.buyTokenWith} {selectedToken}
-                </p>
-                <p className={styles.modaltagline}>{strings.buyDesc}</p>
-                <div className={styles.inputContainer}>
-                  <input
-                    type="text"
-                    value={format(buyAmount)}
-                    className={styles.input}
-                    onChange={(e) => updateTokenAmount(e.target.value)}
-                  />
-                  <p className={styles.token}>{config.tokenSymbol}</p>
-                </div>
-                <div className={styles.suggestionContainer}>
-                  <span className={styles.suggestion}>
-                    {strings.payTtl}: {payAmount} USDT
-                  </span>
-                  <span className={styles.suggestion}>
-                    {strings.minimumTtl}: 3,000 {config.tokenSymbol}
-                  </span>
+                <div className="flexz">
+                  <p className={mcwStyles.modalClose}>
+                    <FontAwesomeIcon
+                      onClick={() => setShowModal(false)}
+                      icon={faXmark}
+                    />
+                  </p>
+                  <p className={styles.modalTitle}>
+                    {strings.buyTokenWith} {selectedToken}
+                  </p>
+                  <p className={styles.modaltagline}>{strings.buyDesc}</p>
+                  <div className={styles.inputContainer}>
+                    <input
+                      type="text"
+                      value={format(buyAmount)}
+                      className={styles.input}
+                      onChange={(e) => updateTokenAmount(e.target.value)}
+                    />
+                    <p className={styles.token}>{config.tokenSymbol}</p>
+                  </div>
+                  <div className={styles.suggestionContainer}>
+                    <span className={styles.suggestion}>
+                      {strings.payTtl}: {payAmount} USDT
+                    </span>
+                    <span className={styles.suggestion}>
+                      {strings.minimumTtl}: 3,000 {config.tokenSymbol}
+                    </span>
+                  </div>
                 </div>
                 {/* {purchaseToken < 4 && (
                   <div
@@ -170,49 +173,58 @@ export default function ModalBuy({
                     </span>
                   </div>
                 )} */}
+                <div className="bg-cont">
+                  <div className="gift-heads">
+                    <div className="flex-ico">
+                      <img src={GiftIco} alt="" /><span className="gift-txt">Choose bonuses</span>
+                    </div>
+                    <p className="sp-bonus">
+                      *special bonus will be distributed to your wallet 30 days after the TGE
+                    </p>
+                  </div>
+                  <div className={styles.tokensToBuyContainer}>
+                    <button onClick={() => changeAmountHandler("3000")}>
+                      3,000 SWDTKN
+                    </button>
+                    <button className=" rel-pos" onClick={() => changeAmountHandler("5000")}>
+                      5,000 SWDTKN
+                      <span className="float-num">
+                        +5% bonus
+                      </span>
+                    </button>
+                    <button className="md-top-sp rel-pos" onClick={() => changeAmountHandler("8000")}>
+                      8,000 SWDTKN
+                      <span className="float-num">
+                        +10% bonus
+                      </span>
+                    </button>
+                    <button className="top-sp rel-pos" onClick={() => changeAmountHandler("10000")}>
+                      10,000 SWDTKN
+                      <span className="float-num">
+                        +15% bonus
+                      </span>
+                    </button>
+                    <button className="top-sp rel-pos" onClick={() => changeAmountHandler("15000")}>
+                      15,000 SWDTKN
+                      <span className="float-num">
+                        +20% bonus
+                      </span>
+                    </button>
+                    <button className="top-sp rel-pos" onClick={() => changeAmountHandler("20000")}>
+                      20,000 SWDTKN
+                      <span className="float-num">
+                        +25% bonus
+                      </span>
+                    </button>
+                  </div>
 
-                <div className={styles.tokensToBuyContainer}>
-                  <button onClick={() => changeAmountHandler("3000")}>
-                    3,000 SWDTKN
-                  </button>
-                  <button className=" rel-pos" onClick={() => changeAmountHandler("5000")}>
-                    5,000 SWDTKN
-                    <span className="float-num">
-                      +5% bonus
-                    </span>
-                  </button>
-                  <button className="md-top-sp rel-pos" onClick={() => changeAmountHandler("8000")}>
-                    8,000 SWDTKN
-                    <span className="float-num">
-                      +10% bonus
-                    </span>
-                  </button>
-                  <button className="top-sp rel-pos" onClick={() => changeAmountHandler("10000")}>
-                    10,000 SWDTKN
-                    <span className="float-num">
-                      +15% bonus
-                    </span>
-                  </button>
-                  <button className="top-sp rel-pos" onClick={() => changeAmountHandler("15000")}>
-                    15,000 SWDTKN
-                    <span className="float-num">
-                      +20% bonus
-                    </span>
-                  </button>
-                  <button className="top-sp rel-pos" onClick={() => changeAmountHandler("20000")}>
-                    20,000 SWDTKN
-                    <span className="float-num">
-                      +25% bonus
-                    </span>
+                  <button
+                    onClick={() => buyAction(buyAmount)}
+                    className={styles.approveButton}
+                  >
+                    {strings.buyTtl}
                   </button>
                 </div>
-
-                <button
-                  onClick={() => buyAction(buyAmount)}
-                  className={styles.approveButton}
-                >
-                  {strings.buyTtl}
-                </button>
               </div>
             </div>
           </div>

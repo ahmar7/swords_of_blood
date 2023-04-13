@@ -1,7 +1,7 @@
 const config = {
   appName: "Swords of Blood",
   defaultLanguage: "en",
-  tokenSymbol: "$SWDTKN",
+  tokenSymbol: "SWDTKN",
   tokenAddress: "0x399D1cfef34c55D6b561AAF053cf0F19D48Bd82B",
   web3SessionDuration: 120,
   coinDecimals: 18,

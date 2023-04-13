@@ -26,7 +26,7 @@ export default function Strings() {
       "Suite 305 Griffith Corporate Centre, Kingstown, St Vincent, and the Grenadines.",
     quickLinks: "Quick links",
     // presaleStage: 'Presale stage',
-    presaleStage: "PRESALE 2 IS OFFICIALLY OPEN",
+    presaleStage: "PRESALE 2 IS OPENING OPEN",
 
     // buyBeforeTheEnd: "Hurry before the end of presale!",
     buyBeforeTheEnd: "Please wait for announcements",

@@ -21,16 +21,16 @@ export default function Video({ url, title, img, standard }) {
       >
       <div className="game-flex">
       <div className="indiv-video">
-            <video autoPlay muted playsInline  src={Video1}></video>
+            <video autoPlay muted loop playsInline  src={Video1}></video>
             <h1 className="vid-title">Compaign Mode</h1>
       </div>
       <div className="indiv-video">
-            <video autoPlay muted playsInline  src={Video2}></video>
+            <video autoPlay muted  loop  playsInline  src={Video2}></video>
             <h1 className="vid-title">Monster Hunt</h1>
 
       </div>
       <div className="indiv-video">
-            <video autoPlay muted playsInline  src={Video3}></video>
+            <video autoPlay muted loop playsInline  src={Video3}></video>
             <h1 className="vid-title">PvP Mode</h1>
 
       </div>
