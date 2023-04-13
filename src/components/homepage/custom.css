@@ -15,7 +15,41 @@
 }.team_teamSection__0W7nM{
   width: 100%;
 }
-
+.game-flex{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.indiv-video{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 30%;
+}
+.vid-title{
+  color: white;
+  text-align: center;
+}
+@media (max-width:1200px) {
+  .game-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+.indiv-video{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 auto;
+  width: 90%;
+}
+}
+.indiv-video video{width: 100%;}
 .data-flex{
       display: flex;
     align-items: center;

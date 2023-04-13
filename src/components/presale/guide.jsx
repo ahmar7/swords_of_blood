@@ -76,18 +76,13 @@ export default function Guide() {
             />
           </div>
         </div>
-        <div className={styles.howToBuy} style={{position:"relative",height:"fit-content"}}>
+        <div className={styles.howToBuy}  >
           <img
             src={images["presale/Bg-1.webp"]}
             alt="Stage 2"
-            className={[styles.image, "image abs-img"].join(" ")}
+            className={[styles.image, "image  "].join(" ")}
           />
-          <img
-            src={images["presale/Bg.webp"]}
-            alt="Stage 2"
-            style={{opacity:0}}
-            className={[styles.image, "image no-dsi"].join(" ")}
-          />
+          
           <div className={styles.textContainer  } >
             <div className={styles.presaleHeader}>
               <img

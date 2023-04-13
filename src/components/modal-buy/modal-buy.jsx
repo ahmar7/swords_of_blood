@@ -7,7 +7,7 @@ import Localization from "../../context/localization";
 import { config } from "../../functions/config";
 import mcwStyles from "../modal-connect-wallet/modal-connect-wallet.module.css";
 import styles from "./modal-buy.module.css";
-
+import './custom.css'
 function format(num) {
   const result = num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   return result;
@@ -23,6 +23,7 @@ export default function ModalBuy({
   const [selectedToken, setSelectedToken] = useState("ETH");
   const [buyAmount, setBuyAmount] = useState(3000);
   const [payAmount, setPayAmount] = useState(0);
+  const [initialAmount, setinitialAmount] = useState(3000);
   const curBodyClasses = useRef(null);
 
   const updateSelectedToken = (val) => {
@@ -50,11 +51,61 @@ export default function ModalBuy({
     setPayAmount(
       parseFloat(val * 0.07).toLocaleString("en-US")
     );
+   
+    
   };
 
   const updateTokenAmount = (val) => {
+    setinitialAmount(val)
+
     val = val.replace(/[^0-9]/g, "");
     setBuyAmount(val);
+
+    // if (val > 4999 && val < 8000) {
+    //   let newVal = (val / 100) * 5;
+    //   let finalVal = parseInt(newVal) + parseInt(val)
+    //   console.log("new", newVal);
+    //   console.log("final", finalVal);
+    //   console.log(val);
+    //   setBuyAmount(finalVal)
+
+    // }
+    // else if (val > 7999 && val < 10000) {
+    //   let newVal = (val / 100) * 10;
+    //   let finalVal = parseInt(newVal) + parseInt(val)
+    //   console.log("new", newVal);
+    //   console.log("final", finalVal);
+    //   console.log(val);
+    //   setBuyAmount(finalVal)
+    // }
+    // else if (val > 9999 && val < 15000) {
+    //   let newVal = (val / 100) * 15;
+    //   let finalVal = parseInt(newVal) + parseInt(val)
+    //   console.log("new", newVal);
+    //   console.log("final", finalVal);
+    //   console.log(val);
+    //   setBuyAmount(finalVal)
+    // }
+    // else if (val > 14999 && val < 20000) {
+    //   let newVal = (val / 100) * 20;
+    //   let finalVal = parseInt(newVal) + parseInt(val)
+    //   console.log("new", newVal);
+    //   console.log("final", finalVal);
+    //   console.log(val);
+    //   setBuyAmount(finalVal)
+    // }
+    // else if (val > 19999) {
+    //   let newVal = (val / 100) * 25;
+    //   let finalVal = parseInt(newVal) + parseInt(val)
+    //   console.log("new", newVal);
+    //   console.log("final", finalVal);
+    //   console.log(val);
+    //   setBuyAmount(finalVal)
+    // }
+    // else {
+
+    //   setBuyAmount(val)
+    // }
   };
 
   useEffect(() => {
@@ -107,7 +158,7 @@ export default function ModalBuy({
                     {strings.minimumTtl}: 3,000 {config.tokenSymbol}
                   </span>
                 </div>
-                {purchaseToken < 4 && (
+                {/* {purchaseToken < 4 && (
                   <div
                     className={[
                       styles.suggestionContainer,
@@ -118,17 +169,41 @@ export default function ModalBuy({
                       {strings.approveMessage}
                     </span>
                   </div>
-                )}
+                )} */}
 
                 <div className={styles.tokensToBuyContainer}>
-                  <button onClick={() => changeAmountHandler("5000")}>
+                  <button onClick={() => changeAmountHandler("3000")}>
+                    3,000 SWDTKN
+                  </button>
+                  <button className=" rel-pos" onClick={() => changeAmountHandler("5000")}>
                     5,000 SWDTKN
+                    <span className="float-num">
+                      +5% bonus
+                    </span>
                   </button>
-                  <button onClick={() => changeAmountHandler("8000")}>
+                  <button className="md-top-sp rel-pos" onClick={() => changeAmountHandler("8000")}>
                     8,000 SWDTKN
+                    <span className="float-num">
+                      +10% bonus
+                    </span>
                   </button>
-                  <button onClick={() => changeAmountHandler("10000")}>
+                  <button className="top-sp rel-pos" onClick={() => changeAmountHandler("10000")}>
                     10,000 SWDTKN
+                    <span className="float-num">
+                      +15% bonus
+                    </span>
+                  </button>
+                  <button className="top-sp rel-pos" onClick={() => changeAmountHandler("15000")}>
+                    15,000 SWDTKN
+                    <span className="float-num">
+                      +20% bonus
+                    </span>
+                  </button>
+                  <button className="top-sp rel-pos" onClick={() => changeAmountHandler("20000")}>
+                    20,000 SWDTKN
+                    <span className="float-num">
+                      +25% bonus
+                    </span>
                   </button>
                 </div>
 
