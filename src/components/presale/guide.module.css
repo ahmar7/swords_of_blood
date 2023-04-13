@@ -126,10 +126,15 @@
 
 @media only screen and (max-width: 1700px) {
   .howToBuyContainer {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .benefits {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width:1400px) {
+   .howToBuyContainer {
+    grid-template-columns:  1fr;
   }
 }
 
@@ -138,7 +143,7 @@
     grid-template-columns: 1fr;
   }
   .benefits {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -147,9 +152,12 @@
     grid-template-columns: 1fr;
     padding: 40px 0;
   }
-
+ .benefits {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .howToBuy .image {
-    max-width: 500px;
+    max-width: 100%;
+    padding: 0 25px;
     margin: 0 auto;
   }
 
@@ -164,6 +172,10 @@
   .howToBuy .textContainer {
     padding: 0;
   }
+  .howToBuy .image {
+    padding: 0px;
+  }
+
   .benefits { 
   gap: 50px; 
 }

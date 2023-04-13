@@ -8,13 +8,14 @@ import Team from "./team";
 import Partners from "./partners";
 import Video from "./video";
 import GameMode from "./GameMode";
+import VideoHome from "./videoHome";
 
 export default function Homepage() {
   return (
     <>
       <Banner />
       <WhatYouGet />
-      <Video title="Gameplay" img="gameplay.webp" />
+      <VideoHome title="Gameplay" />
       <About />
       <GameMode />
       <AsSeenOn />

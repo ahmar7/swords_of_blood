@@ -1,13 +1,12 @@
 .videoContainer {
-  max-width: 100%;
-  margin: 30px auto;
-  width: 100%;
-  padding-bottom: 50px;
-  position: relative;
-  /* padding-bottom: 419px; */
-   /* 16:9 aspect ratio */
-  /* height: 0; */
+     height: 0;
+    margin: 30px auto;
+    max-width: 746px;
+    padding-bottom: 419px;
+    position: relative;
+    width: 100%;
 }
+
 
 .heading {
   padding-bottom: 0;

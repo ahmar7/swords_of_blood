@@ -27,7 +27,7 @@ import {
 import ModalBuy from "../modal-buy/modal-buy";
 import styles from "./banner.module.css";
 import Countdown from "../countdown/Countdown";
-
+import './custom.css'
 import ModalConnectWallet from "../modal-connect-wallet/modal-connect-wallet";
 
 const Video = lazy(() => import("./bannerVideo"));
@@ -567,7 +567,7 @@ export default function Banner() {
                   {strings.buyBefore
                     .replace("{STAGE}", presaleData.currentStage + 2)
                     .replace("{PRICE}", presaleData.nextPrice)}
-                  <span>$0.080</span>
+                  <span className="red-high">$0.080</span>
                 </p>
                 {/* ) : (
                   <p className={styles.info}>{strings.buyBeforeTheEnd}</p>

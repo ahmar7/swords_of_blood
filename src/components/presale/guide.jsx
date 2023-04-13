@@ -5,6 +5,7 @@ import styles from "./guide.module.css";
 import Video from "../homepage/video";
 import WhyBuyToken from "./WhyBuyToken";
 import './custom.css'
+import VideoHome from "../homepage/videoHome";
 
 export default function Guide() {
   const { strings } = useContext(Localization);
@@ -48,7 +49,7 @@ export default function Guide() {
       <Benefits benefits={benefits} images={images} />
 
       <h1>Gameplay</h1>
-      <Video img="gameplay.webp" />
+      <VideoHome />
 
       <h1>Why Buy SWDTKN</h1>
       <WhyBuyToken />

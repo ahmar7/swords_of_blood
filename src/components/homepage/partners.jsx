@@ -45,7 +45,7 @@ export default function Partners() {
 			link: 'https://krypital.com/en'
 		},
 		{
-			img: images['home/partner/backers/york.webp'],
+			img: images['home/partner/backers/forbes-7.webp'],
 			link: 'https://krypital.com/en'
 		},
 	]

@@ -135,7 +135,7 @@ export default function Strings() {
     teamName5: "Jakub Szamalek",
     teamTtl5: "Narrative Director",
     teamName6: "John Moyer",
-    teamTtl6: "Bass Guitarist",
+    teamTtl6: "Bass Guitarist of the band Disturbed",
     teamName7: "Vee Lozano",
     teamTtl7: "Business Development Lead",
     teamName8: "Jason Hung",

@@ -129,7 +129,7 @@ export default function Strings() {
     teamTtl5: "Narrative Director",
     teamBio5: "A decade of experience in UI/UX design",
     teamName6: "John Moyer",
-    teamTtl6: "Bass Guitarist",
+    teamTtl6: "Bass Guitarist of the band Disturbed",
     teamBio6:
       "Former Director of Narrative Design for Cyberpunk and The Witcher 3",
     teamName7: "Vee Lozano",
