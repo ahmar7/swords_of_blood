@@ -1,6 +1,8 @@
 import { useContext, useState, useEffect, useRef, Suspense, lazy } from "react";
 import Web3Provider from "../../context/web3provider";
 import Localization from "../../context/localization";
+// import Video from './BannerVideo'
+
 import {
   SetGlobalProvider,
   getPresaleContract,
@@ -516,7 +518,7 @@ export default function Banner() {
     <>
       <div className={["mainBanner", "timer", styles.banner].join(" ")}>
         <div className={styles.heroSection}>
-          {/* <Suspense
+          <Suspense
             fallback={
               <img
                 src={images["home/banner/hero3.png"]}
@@ -525,8 +527,8 @@ export default function Banner() {
               />
             }
           >
-          </Suspense> */}
             <Video muted />
+          </Suspense>
         </div>
         <div
           className={[

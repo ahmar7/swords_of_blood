@@ -12,7 +12,14 @@
   margin-right: -10px;
 }
 
-
+.banner .image {
+  height: 140%;
+  /* object-fit: cover; */
+  transform: scaleX(1.1);
+  margin-left: -35px;
+  object-position: center;
+  object-fit: cover;
+}
 
 .banner .connectWalletContainer {
   position: relative;
@@ -257,7 +264,9 @@
     padding-bottom: 0px;
   }
 
-  
+  .banner .image {
+    transform: translateX(0);
+  }
 
   .banner .connectWalletContainer {
     top: 0;
@@ -289,7 +298,12 @@
 }
 
 @media only screen and (max-width: 991px) {
+   .heroSection {
+   display: none !important;
+  }
   .banner .connectWalletContainer {
+
+
     position: relative;
     z-index: 2;
     border: none;
@@ -299,7 +313,10 @@
     top: 0;
   }
 
-  
+  .banner .image {
+    height: 100%;
+    transform: translateX(0);
+  }
 
   .buyingMethod {
     bottom: 1px;
@@ -331,7 +348,9 @@
     width: 100%;
   }
 
- 
+  .banner .image {
+    border-radius: 14px 14px 0 0;
+  }
 
   .banner .amountContainer {
     padding: 12px 0;
@@ -341,7 +360,17 @@
     padding-bottom: 50px;
   }
 }
-
+@media (max-width: 768px) {
+  .banner .image {
+    /* display: none !important;
+   position: absolute;
+   z-index: -99999999;
+   width: 0 !important;
+   opacity: 0 !important; */
+    position: absolute;
+    top: -55000%;
+  }
+}
 @media only screen and (max-width: 400px) {
   .banner .connectWallet {
     padding: 16px 10px;
