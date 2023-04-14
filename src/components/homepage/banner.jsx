@@ -525,8 +525,8 @@ export default function Banner() {
               />
             }
           >
-            <Video muted />
           </Suspense> */}
+            <Video muted />
         </div>
         <div
           className={[
