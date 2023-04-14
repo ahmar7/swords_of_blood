@@ -298,9 +298,7 @@
 }
 
 @media only screen and (max-width: 991px) {
-   .heroSection {
-   display: none !important;
-  }
+  
   .banner .connectWalletContainer {
 
 
