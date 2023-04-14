@@ -29,7 +29,7 @@ let BannerVideo=()=> {
         style={{ pointerEvents: "none" }}
 
         className={["image desk-only", styles.image].join(" ")}
-
+autoPlay
         loop
         playsinline
       >
