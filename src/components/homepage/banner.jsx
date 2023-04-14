@@ -516,7 +516,7 @@ export default function Banner() {
     <>
       <div className={["mainBanner", "timer", styles.banner].join(" ")}>
         <div className={styles.heroSection}>
-          <Suspense
+          {/* <Suspense
             fallback={
               <img
                 src={images["home/banner/hero3.png"]}
@@ -526,7 +526,7 @@ export default function Banner() {
             }
           >
             <Video muted />
-          </Suspense>
+          </Suspense> */}
         </div>
         <div
           className={[
