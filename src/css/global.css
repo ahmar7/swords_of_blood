@@ -84,48 +84,7 @@ button {
   color: #c9ab84;
 }
 
-.text {
-  font-family: "Space Grotesk";
-  font-display: swap;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 125%;
-  text-align: center;
-  color: #ffffff;
-  mix-blend-mode: normal;
-}
 
-.subtext {
-  font-family: "Space Grotesk";
-  font-display: swap;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 125%;
-  letter-spacing: 1px;
-  color: #c9ab84;
-}
-
-.blank {
-  display: none;
-}
-
-.swiper {
-  width: 100%;
-}
-
-.swiper-slide {
-  display: flex !important;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.swiper-pagination {
-  z-index: 10;
-  color: #c9ab84;
-  padding-right: 33%;
-}
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #c9ab84;
@@ -149,23 +108,7 @@ button {
   line-height: 150%;
 }
 
-.textCont li.text {
-  margin-left: 15px;
-}
-
-.textCont li.text::marker {
-  margin-left: 3px;
-}
-
-.textCont .title {
-  text-align: left;
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-
-.textCont .padding {
-  padding-bottom: 0px;
-}
+ 
 @media (max-width: 991px) {
   .imp-mbl {
     display: flex !important;

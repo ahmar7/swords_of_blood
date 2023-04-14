@@ -10,7 +10,7 @@ import { config } from "../../functions/config";
 import { importAllImages } from "../../functions/common";
 import styles from "./header.module.css";
 import { Link } from "react-router-dom";
-
+import MblLogo from '../../images/home/Swoordsofblood-logo-mobile.png'
 export default function Header({ toggleSidebar }) {
   const { strings, lang, locales, SetLanguage } = useContext(Localization);
   const [langMenu, setLangMenu] = useState([]);
@@ -87,7 +87,12 @@ export default function Header({ toggleSidebar }) {
       <img
         src={images["logo.webp"]}
         alt="Swords of Blood"
-        className={styles.headerLogo}
+        className={styles.headerLogo+" "+"maxno"}
+      />
+      <img
+        src={MblLogo}
+        alt="Swords of Blood"
+        className={"maxnoso"}
       />
       <div className={styles.adressAndLanugage}>
         <p className={styles.contactAddress}>
