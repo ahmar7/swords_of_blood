@@ -12,8 +12,7 @@ let BannerVideo=()=> {
          
         className={["image desk-only", styles.image].join(" ")}
         autoPlay
-        loop 
-        playsinline
+        loop  
       >
         <source   src="/assets/video/hero3.webm" type="video/webm" />
         <source  src="/assets/video/hero3.mp4" type="video/mp4" />
