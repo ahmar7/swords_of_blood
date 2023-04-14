@@ -180,3 +180,14 @@
   gap: 50px; 
 }
 }
+@media (max-width:450px) {
+  .benefits{
+    column-gap: 5px !important
+;
+}
+.benefitsContainer {
+ padding-inline: 10px;
+}
+
+  
+}

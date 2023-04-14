@@ -10,7 +10,7 @@ let BannerVideo=()=> {
       <video 
         style={{ pointerEvents: "none" }}
          
-        className={["image desk-only", styles.image].join(" ")}
+        className="vide-ime"
         autoPlay
         loop 
         playsinline
